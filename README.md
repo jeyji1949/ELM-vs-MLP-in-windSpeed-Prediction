@@ -95,15 +95,16 @@ output data are normalized with `StandardScaler` before training in order to spe
 The figures below compare the desired values, corresponding to the real signal, with the values
 predicted by each model on the first 200 samples of the test set.
 
-Figure 1 - Comparative curves: desired values vs predicted values for ELM, MLP, and their
-superposition.
+![alt text](elm_prediction_curve.png)
+![alt text](mlp_prediction_curve.png)
+![alt text](comparative_curves.png)
 
 ## 5.2 Scatter Plots: Desired vs Predicted Values
 
 An ideal scatter plot would be aligned with the diagonal line `y = x`. The farther the points are from
 this diagonal, the less accurate the model is.
 
-Figure 2 - Scatter plots: desired values vs predicted values for ELM and MLP.
+![alt text](scatter_plots.png)
 
 # 6. Evaluation Metrics
 
