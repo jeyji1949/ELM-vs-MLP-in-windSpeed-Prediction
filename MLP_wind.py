@@ -37,7 +37,7 @@ mlp = MLPRegressor(
     activation="relu",
     solver="adam",
     learning_rate_init=0.001,
-    max_iter=500,
+    max_iter=400,
     early_stopping=True,
     validation_fraction=0.1,
     random_state=42,
@@ -77,7 +77,7 @@ np.save("mlp_y_pred.npy",  y_pred_mlp)
 np.save("mlp_metrics.npy", np.array([mae, mse, rmse, r2, temps_convergence, mlp.n_iter_]))
 
 
-N_plot = 200
+N_plot = 400
 
 plt.figure(figsize=(14, 5))
 plt.plot(y_test[:N_plot],     label="Valeurs désirées",   color="steelblue",  linewidth=1.5)
